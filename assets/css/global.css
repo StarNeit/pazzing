@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: ExoBold;
+    src: url("../fonts/Exo2-Bold.ttf");
+}
+
+root {
+    --color-text-primary: #FFFFFF;
+    --color-text-seconary: #80FFFA;
+    --color-text-info: #FBFF9A;
+}
+
+html {
+    font-family: ExoBold;
+    color: #FFF;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+}
+
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4EA1FF;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #65E7FF;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+}
+
+::-webkit-scrollbar-button:vertical:increment::before {
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+}
+
+::-webkit-scrollbar-button:vertical:decrement::after {
+}
+

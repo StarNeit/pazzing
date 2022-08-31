@@ -1,0 +1,372 @@
+#dashboard {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 120px;
+    width: 100%;
+    min-height: 100%;
+    background-image: linear-gradient(180deg, #3524FF, #994EFF);
+    padding: 16px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar .logo {
+    width: 104px;
+    height: auto;
+}
+
+#sidebar .menu {
+    width: 40px;
+}
+
+#sidebar .menu img {
+    width: 100%;
+    height: auto;
+}
+
+.dashboard-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 40px 50px 40px 32px;
+    background-image: url("../images/gradient_bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -30px;
+}
+
+.left {
+    max-width: 450px;
+    width: 100%;
+    margin-right: 30px;
+    padding-top: 28px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 34px;
+    line-height: 42px;
+    border-bottom: 2px solid #4EA1FF;
+    position: relative;
+}
+
+.hero h1::before {
+    content: "";
+    position: absolute;
+    left: -6px;
+    top: 97%;
+    width: 2px;
+    height: 2px;
+    border: 2px solid #4EA1FF;
+    border-radius: 50%;
+}
+
+.hero h1::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 97%;
+    width: 2px;
+    height: 2px;
+    border: 2px solid #4EA1FF;
+    border-radius: 50%;
+}
+
+.hero span {
+    color: #80FFFA;
+}
+
+.content {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h2 {
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 3px 6px #001DFF6A;
+    margin-bottom: 30px;
+}
+
+.category-wrapper {
+    max-width: 400px;
+    width: 100%;
+}
+
+.category-widget {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position: relative;
+    padding: 12px 18px 12px 48px;
+    margin-bottom: 24px;
+}
+
+.category-widget .widget-icon {
+    position: absolute;
+    top: -21px;
+    left: -43px;
+}
+
+.category-widget span {
+    font-size: 16px;
+    color: #8BFFFA;
+}
+
+.category-widget h3 {
+    font-size: 20px;
+    color: #EFFF9A;
+    margin-top: 4px;
+}
+
+.category-widget p {
+    font-size: 14px;
+    color: #D6F7FF;
+    letter-spacing: 0.1px;
+}
+
+.category-widget.widget-1 {
+    background-image: url("../images/card_01_bg.png");
+}
+
+.category-widget.widget-2 {
+    background-image: url("../images/card_02_bg.png");
+    margin-right: 16px;
+    padding-right: 2px;
+}
+
+.category-widget.widget-3 {
+    background-image: url("../images/card_03_bg.png");
+    margin-right: 32px;
+    padding-right: 8px;
+}
+
+.category-widget.widget-4 {
+    background-image: url("../images/card_04_bg.png");
+    margin-right: 48px;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.category-widget.widget-4 h3 {
+    font-size: 28px;
+    letter-spacing: 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.challenges {
+    flex: 1;
+    position: relative;
+}
+
+.scroll-wrapper {
+    height: 65vh;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.challenges::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #62AAFF;
+}
+
+.challenges::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #81b6f1;
+}
+
+.challenge-list {
+    min-height: 1000px;
+    padding: 0 40px 0 100px;
+}
+
+.challenge-item {
+    position: relative;
+    border-radius: 20px;
+    border: 2px solid #65E7FF;
+    background-image: linear-gradient(180deg, transparent, #00E1FF);
+    padding: 16px 84px 16px 64px;
+}
+
+.hexagon {
+    position: absolute;
+    top: 50%;
+    left: -60px;
+    transform: translateY(-50%);
+}
+
+.challenge-item h3 {
+    color: #FBFF9A;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.items {
+    display: flex;
+}
+
+.item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 174px;
+    margin-right: 12px;
+}
+
+.item span {
+    position: relative;
+    font-size: 14px;
+}
+
+.item .label {
+    opacity: 0.7;
+}
+
+.item-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(180deg, #297EEE, #36A6F9);
+    transform: skewX(-25deg);
+    border-radius: 10px;
+}
+
+.challenge-action {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -14px;
+}
+
+.button-group {
+    position: relative;
+    height: 100%;
+    width: 80px;
+}
+
+.icon-button {
+    border-radius: 8px;
+    background-image: linear-gradient(135deg, #424de9, #49bfee);
+    border: 2px solid #5863FB;
+    transform: rotate(45deg);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #80FFFA;
+}
+
+.icon-button img {
+    width: 18px;
+    height: auto;
+    transform: rotate(-45deg);
+}
+
+.icon-button .trash-icon {
+    width: 20px;
+}
+
+.icon-button.delete {
+    position: absolute;
+    top: 12px;
+}
+
+.icon-button.edit {
+    position: absolute;
+    bottom: 12px;
+}
+
+.icon-button.link {
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    transform: translateY(-50%) rotate(45deg);
+    background-image: linear-gradient(135deg, #AA61FF, #DF90FE);
+    border-color: #B668FF;
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 2px 2px #e2c9fc;
+}
+
+.icon-button.link img {
+    width: 22px;
+}
+
+.gradient-box {
+    width: 100%;
+    height: 37px;
+    overflow: hidden;
+}
+
+.gradient {
+    background-image: radial-gradient(#49bfee 10%, transparent 70%);
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.action {
+    padding-top: 20px;
+}
+
+.action button {
+    width: 380px;
+    height: 80px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../images/button_bg.png');
+    background-size: contain;
+    font-size: 22px;
+    color: white;
+    padding-bottom: 4px;
+    font-family: ExoBold;
+}
+
+
+
+
